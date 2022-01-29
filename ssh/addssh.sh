@@ -1,5 +1,5 @@
 #!/bin/bash
-# My Telegram : https://t.me/Akbar218
+
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -12,31 +12,17 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
 # Getting
-MYIP=$(wget -qO- ipinfo.io/ip);
-echo "Checking VPS"
-IZIN=$( curl https://raw.githubusercontent.com/senowahyu62/perizinan/main/ipvps.txt | grep $MYIP )
-if [ $MYIP = $MYIP ]; then
-echo -e "${NC}${GREEN}Permission Accepted...${NC}"
-else
-echo -e "${NC}${RED}Permission Denied!${NC}";
-echo -e "${NC}${LIGHT}Please Contact Admin!!"
-echo -e "${NC}${LIGHT}Facebook : https://m.facebook.com/lis.tio.718"
-echo -e "${NC}${LIGHT}WhatsApp : 081545854516"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/Akbar218"
-exit 0
-fi
-source /var/lib/akbarstorevpn/ipvps.conf
-if [[ "$IP2" = "" ]]; then
+
 domain=$(cat /etc/xray/domain)
-else
-domain=$IP2
-fi
 clear
 read -p "Username : " Login
 read -p "Password : " Pass
 read -p "Expired (Days): " masaaktif
 
 IP=$(wget -qO- ipinfo.io/ip);
+ws="$(cat ~/log-install.txt | grep -w "Websocket TLS" | cut -d: -f2|sed 's/ //g')"
+ws2="$(cat ~/log-install.txt | grep -w "Websocket None TLS" | cut -d: -f2|sed 's/ //g')"
+
 ssl="$(cat ~/log-install.txt | grep -w "Stunnel5" | cut -d: -f2)"
 sqd="$(cat ~/log-install.txt | grep -w "Squid" | cut -d: -f2)"
 ovpn="$(netstat -nlpt | grep -i openvpn | grep -i 0.0.0.0 | awk '{print $4}' | cut -d: -f2)"
@@ -55,19 +41,18 @@ expi=`date -d "$masaaktif days" +"%Y-%m-%d"`
 echo -e ""
 echo -e "Informasi SSH & OpenVPN"
 echo -e "=============================="
-echo -e "IP/Host       : $IP"
-echo -e "Domain        : ${domain}"
-echo -e "Username      : $Login"
-echo -e "Password      : $Pass"
-echo -e "OpenSSH       : 443, 22"
-echo -e "Dropbear      : 443, 109, 143"
-echo -e "SSL/TLS       :$ssl"
-echo -e "Port Squid    :$sqd"
+echo -e "IP/Host       : `$IP`"
+echo -e "Domain        : `${domain}`"
+echo -e "Username      : `$Logi`n"
+echo -e "Password      : `$Pass`"
+echo -e "Dropbear      : 109, 143"
+echo -e "SSL/TLS       : $ssl"
+echo -e "Port Squid    : $sqd"
 echo -e "OHP SSH       : 8181"
 echo -e "OHP Dropbear  : 8282"
 echo -e "OHP OpenVPN   : 8383"
-echo -e "Ssh Ws SSL    : 443"
-echo -e "Ssh Ws No SSL : 8880"
+echo -e "Ssh Ws SSL    : $ws"
+echo -e "Ssh Ws No SSL : $ws2"
 echo -e "Ovpn Ws       : 2086"
 echo -e "Port TCP      : $ovpn"
 echo -e "Port UDP      : $ovpn2"
@@ -87,4 +72,3 @@ echo -e "Payload Websocket No TLS"
 echo -e "=============================="
 echo -e "GET / HTTP/1.1[crlf]Host: ${domain}[crlf]Upgrade: websocket[crlf][crlf]"
 echo -e "=============================="
-echo -e "Script By Akbar Maulana"
