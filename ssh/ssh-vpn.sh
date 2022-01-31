@@ -392,7 +392,7 @@ netfilter-persistent reload
 cd /usr/bin
 wget -O addhost "https://${akbarvpn}/addhost.sh"
 wget -O about "https://${akbarvpn}/about.sh"
-wget -O menu "https://${akbarvpn}/menu.sh"
+wget -O menu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/menu.sh"
 wget -O addssh "https://${akbarvpn}/addssh.sh"
 wget -O trialssh "https://${akbarvpn}/trialssh.sh"
 wget -O delssh "https://${akbarvpn}/delssh.sh"
@@ -437,8 +437,37 @@ wget -O renewtrgo "https://${akbarvpnnn}/renewtrgo.sh"
 wget -O cektrgo "https://${akbarvpnnn}/cektrgo.sh"
 wget -O portsshnontls "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/websocket/portsshnontls.sh"
 wget -O portsshws "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/websocket/portsshws.sh"
+
+wget -O sshovpnmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/sshovpn.sh"
+wget -O l2tpmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/l2tpmenu.sh"
+wget -O pptpmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/pptpmenu.sh
+wget -O sstpmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/sstpmenu.sh"
+wget -O wgmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/wgmenu.sh""
+wget -O ssmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/ssmenu.sh"
+wget -O ssrmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/ssrmenu.sh"
+wget -O vmessmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/vmessmenu.sh"
+wget -O vlessmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/vlessmenu.sh"
+wget -O trmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/trmenu.sh"
+wget -O trgomenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/trgomenu."
+wget -O setmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/setmenu.sh"
+
+
 chmod +x portsshnontls
 chmod +x portsshws
+
+chmod +x sshovpnmenu
+chmod +x l2tpmenu
+chmod +x pptpmenu
+chmod +x sstpmenu
+chmod +x wgmenu
+chmod +x ssmenu
+chmod +x ssrmenu
+chmod +x vmessmenu
+chmod +x vlessmenu
+chmod +x trmenu
+chmod +x trgomenu
+chmod +x setmenu
+
 chmod +x addhost
 chmod +x menu
 chmod +x addssh
