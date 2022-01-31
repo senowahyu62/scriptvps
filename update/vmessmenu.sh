@@ -14,7 +14,7 @@ echo -e "$yy 4$y. Check User Login XRAYS Vmess"
 echo -e "$yy 5$y. Renew Certificate XRAYS Account"
 echo -e "$yy 6$y. Menu"
 echo -e "$yy 7$y. Exit"
-echo -e "$y-------------------------------------------------------------$wh
+echo -e "$y-------------------------------------------------------------$wh"
 read -p "Select From Options [ 1 - 7 ] : " menu
 echo -e ""
 case $menu in
