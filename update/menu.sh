@@ -1,6 +1,6 @@
 #!/bin/bash
-echo -e "$y           MENU UTAMA $wh"
-echo -e "$y-----------------------------------$wh"
+echo -e "$y                  MENU UTAMA $wh"
+echo -e "$y-------------------------------------------------$wh"
 echo -e "$yy 1$y.  SSH & OpenVPN MENU  $wh"
 echo -e "$yy 2$y.  L2TP MENU$wh"
 echo -e "$yy 3$y.  PPTP MENU$wh"
@@ -14,7 +14,7 @@ echo -e "$yy 10$y. TROJAN GFW MENU$wh"
 echo -e "$yy 11$y. TROJAN GO MENU$wh"
 echo -e "$yy 12$y. Settings$wh"
 echo -e "$yy 13$y. Exit$wh"
-echo -e "$y-----------------------------------$wh"
+echo -e "$y-------------------------------------------------$wh"
 read -p "Select From Options [ 1 - 13 ] : " menu
 case $menu in
 1)
