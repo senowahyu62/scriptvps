@@ -10,7 +10,7 @@ echo -e "$y-------------------------------------------------------------$wh"
 echo -e "$yy 1$y. Create Account SSTP"
 echo -e "$yy 2$y. Delete Account SSTP"
 echo -e "$yy 3$y. Extending Account SSTP Active Life"
-echo -e "$yy 4$y. Check User Login SSTP
+echo -e "$yy 4$y. Check User Login SSTP"
 echo -e "$yy 5$y. Menu"
 echo -e "$yy 6$y. Exit"
 echo -e "$y-------------------------------------------------------------$wh"
