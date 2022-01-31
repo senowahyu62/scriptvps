@@ -39,7 +39,7 @@ rm -f setup.sh && apt update && apt upgrade -y && update-grub && sleep 2 && apt-
 
 • Debian 10 Only
 
-• Ubuntu 18.04 & 20.04 Only
+• Ubuntu 18.04 & 20.04 (Recommended)
 
 # Service & Port
 
