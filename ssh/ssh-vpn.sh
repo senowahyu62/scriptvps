@@ -448,7 +448,7 @@ wget -O ssrmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/up
 wget -O vmessmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/vmessmenu.sh"
 wget -O vlessmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/vlessmenu.sh"
 wget -O trmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/trmenu.sh"
-wget -O trgomenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/trgomenu."
+wget -O trgomenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/trgomenu.sh"
 wget -O setmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/setmenu.sh"
 
 
