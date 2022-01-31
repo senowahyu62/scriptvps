@@ -72,7 +72,7 @@ echo -e "2. Stop Autobackup"
 echo -e "3. Ganti Email"
 echo -e "=============================="
 read -rp "Please Enter The Correct Number : " -e num
-case $menu in
+case $num in
 1)
 start
 ;;
