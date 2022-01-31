@@ -13,11 +13,10 @@ LIGHT='\033[0;37m'
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$( curl https://raw.githubusercontent.com/senowahyu62/perizinan/main/ipvps.txt | grep $MYIP )
 # Link Hosting Kalian
 akbarvpn="raw.githubusercontent.com/senowahyu62/scriptvps/main/backup"
 
-curl https://rclone.org/install.sh | bash
+apt install rclone -y
 printf "q\n" | rclone config
 wget -O /root/.config/rclone/rclone.conf "https://${akbarvpn}/rclone.conf"
 git clone  https://github.com/magnific0/wondershaper.git
