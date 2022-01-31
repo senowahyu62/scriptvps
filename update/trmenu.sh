@@ -1,4 +1,4 @@
-echo -e ""
+#!/bin/bash
 echo -e "$y                         TROJAN GFW $wh"
 echo -e "$y-------------------------------------------------------------$wh"
 echo -e "$yy 1$y. Create Account XRAYS Trojan"
