@@ -14,18 +14,6 @@ LIGHT='\033[0;37m'
 # ==========================================
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
-echo "Checking VPS"
-IZIN=$( curl https://raw.githubusercontent.com/senowahyu62/perizinan/main/ipvps.txt | grep $MYIP )
-if [ $MYIP = $MYIP ]; then
-echo -e "${NC}${GREEN}Permission Accepted...${NC}"
-else
-echo -e "${NC}${RED}Permission Denied!${NC}";
-echo -e "${NC}${LIGHT}Please Contact Admin!!"
-echo -e "${NC}${LIGHT}Facebook : https://m.facebook.com/lis.tio.718"
-echo -e "${NC}${LIGHT}WhatsApp : 081545854516"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/Akbar218"
-exit 0
-fi
 # ==================================================
 # Link Hosting Kalian
 akbarvpn="raw.githubusercontent.com/senowahyu62/scriptvps/main/ssh"
@@ -447,6 +435,10 @@ wget -O addtrgo "https://${akbarvpnnn}/addtrgo.sh"
 wget -O deltrgo "https://${akbarvpnnn}/deltrgo.sh"
 wget -O renewtrgo "https://${akbarvpnnn}/renewtrgo.sh"
 wget -O cektrgo "https://${akbarvpnnn}/cektrgo.sh"
+wget -O portsshnontls "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/websocket/portsshnontls.sh"
+wget -O portsshws "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/websocket/portsshws.sh"
+chmod +x portsshnontls
+chmod +x portsshws
 chmod +x addhost
 chmod +x menu
 chmod +x addssh
