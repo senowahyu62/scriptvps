@@ -12,7 +12,7 @@ echo -e "$yy 2$y. Delete Account L2TP"
 echo -e "$yy 3$y. Extending Account L2TP Active Life"
 echo -e "$yy 4$y. Menu"
 echo -e "$yy 5$y. Exit"
-echo -e "$y-------------------------------------------------------------$wh
+echo -e "$y-------------------------------------------------------------$wh"
 read -p "Select From Options [ 1 - 7 ] : " menu
 echo -e ""
 case $menu in
