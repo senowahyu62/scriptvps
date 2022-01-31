@@ -1,4 +1,4 @@
-echo -e ""
+#!/bin/bash
 echo -e "$y                        TROJAN GO $wh"
 echo -e "$y-------------------------------------------------------------$wh"
 echo -e "$yy 1$y. Create Account Trojan Go"
