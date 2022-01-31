@@ -1,0 +1,38 @@
+echo -e ""
+echo -e "$y                        TROJAN GO $wh"
+echo -e "$y-------------------------------------------------------------$wh"
+echo -e "$yy 1$y. Create Account Trojan Go"
+echo -e "$yy 2$y. Delete Account Trojan Go"
+echo -e "$yy 3$y. Extending Account Trojan Go Active Life"
+echo -e "$yy 4$y. Check User Login Trojan Go"
+echo -e "$yy 5$y. Menu"
+echo -e "$yy 6$y. Exit"
+echo -e "$y-------------------------------------------------------------$wh"
+read -p "Select From Options [ 1 - 60 ] : " menu
+echo -e ""
+case $menu in
+1)
+addtrgo
+;;
+2)
+deltrgo
+;;
+3)
+renewtrgo
+;;
+4)
+cektrgo
+;;
+5)
+clear
+menu
+;;
+6)
+clear
+exit
+;;
+*)
+clear
+menu
+;;
+esac
