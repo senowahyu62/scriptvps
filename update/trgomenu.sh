@@ -8,7 +8,7 @@ echo -e "$yy 4$y. Check User Login Trojan Go"
 echo -e "$yy 5$y. Menu"
 echo -e "$yy 6$y. Exit"
 echo -e "$y-------------------------------------------------------------$wh"
-read -p "Select From Options [ 1 - 60 ] : " menu
+read -p "Select From Options [ 1 - 6 ] : " menu
 echo -e ""
 case $menu in
 1)
