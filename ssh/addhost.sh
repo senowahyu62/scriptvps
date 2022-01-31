@@ -17,13 +17,6 @@ IZIN=$( curl https://raw.githubusercontent.com/senowahyu62/perizinan/main/ipvps.
 clear
 read -rp "Domain/Host : " -e domain
 echo "IP=$domain" >>/var/lib/akbarstorevpn/ipvps.conf
+rm -rf /etc/xray/domain
 echo $domain > /etc/xray/domain
-echo start
-systemctl stop xray.service
-/root/.acme.sh/acme.sh --issue -d $domain --standalone -k ec-256
-~/.acme.sh/acme.sh --installcert -d $domain --fullchainpath /etc/xray/xray.crt --keypath /etc/xray/xray.key --ecc
-systemctl start xray.service
-echo Done
-sleep 1.5
-clear
-neofetch
+certv2ray
