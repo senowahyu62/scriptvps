@@ -1,10 +1,10 @@
 #!/bin/bash
 echo -e "$y                         SHADOWSOCKS $wh"
 echo -e "$y-------------------------------------------------------------$wh"
-echo -e "$yy 1$y.Create Account Shadowsocks"
-echo -e "$yy 2$y.Delete Account Shadowsocks"
-echo -e "$yy 3$y.Extending Account Shadowsocks Active Life"
-echo -e "$yy 4$y.Check User Login Shadowsocks"
+echo -e "$yy 1$y. Create Account Shadowsocks"
+echo -e "$yy 2$y. Delete Account Shadowsocks"
+echo -e "$yy 3$y. Extending Account Shadowsocks Active Life"
+echo -e "$yy 4$y. Check User Login Shadowsocks"
 echo -e "$yy 5$y. Menu"
 echo -e "$yy 6$y. Exit"
 echo -e "$y-------------------------------------------------------------$wh
