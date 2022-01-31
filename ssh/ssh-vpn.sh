@@ -442,7 +442,7 @@ wget -O sshovpnmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/mai
 wget -O l2tpmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/l2tpmenu.sh"
 wget -O pptpmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/pptpmenu.sh
 wget -O sstpmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/sstpmenu.sh"
-wget -O wgmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/wgmenu.sh""
+wget -O wgmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/wgmenu.sh"
 wget -O ssmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/ssmenu.sh"
 wget -O ssrmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/ssrmenu.sh"
 wget -O vmessmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/vmessmenu.sh"
