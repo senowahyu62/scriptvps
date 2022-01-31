@@ -1,4 +1,4 @@
-echo -e ""
+#!/bin/bash
 echo -e "$y                          VLESS $wh"
 echo -e "$y-------------------------------------------------------------$wh"
 echo -e "$yy 1$y.Create Account XRAYS Vless Websocket"
