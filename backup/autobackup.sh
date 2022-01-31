@@ -68,20 +68,34 @@ clear
 echo " Autobackup Has Been Stopped"
 exit 0
 }
+function ganti() {
+rm -rf /home/email
+echo "Please enter your email"
+read -rp "Email : " -e email
+cat <<EOF>>/home/email
+$email
+EOF
+}
 clear
 echo -e "=============================="
 echo -e "     Autobackup Data $sts     "
 echo -e "=============================="
 echo -e "1. Start Autobackup"
 echo -e "2. Stop Autobackup"
+echo -e "3. Ganti Email"
 echo -e "=============================="
 read -rp "Please Enter The Correct Number : " -e num
-if [[ "$num" = "1" ]]; then
+case $menu in
+1)
 start
-elif [[ "$num" = "2" ]]; then
+;;
+2)
 stop
-else
+;;
+3)
+ganti
+;;
+*)
 clear
-echo " You Entered The Wrong Number"
-menu
-fi
+;;
+esac
