@@ -13,7 +13,7 @@ echo -e "$yy 3$y. Extending Account Shadowsocks Active Life"
 echo -e "$yy 4$y. Check User Login Shadowsocks"
 echo -e "$yy 5$y. Menu"
 echo -e "$yy 6$y. Exit"
-echo -e "$y-------------------------------------------------------------$wh
+echo -e "$y-------------------------------------------------------------$wh"
 read -p "Select From Options [ 1 - 6 ] : " menu
 echo -e ""
 case $menu in
