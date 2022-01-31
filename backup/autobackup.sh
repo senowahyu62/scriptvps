@@ -55,7 +55,8 @@ clear
 echo " Autobackup Has Been Stopped"
 exit 0
 }
-function ganti() {
+
+function gantipenerima() {
 rm -rf /home/email
 echo "Please enter your email"
 read -rp "Email : " -e email
@@ -63,13 +64,48 @@ cat <<EOF>>/home/email
 $email
 EOF
 }
+function gantipengirim() {
+echo "Please enter your email"
+read -rp "Email : " -e email
+echo "Please enter your Password email"
+read -rp "Password : " -e pwdd
+rm -rf /etc/msmtprc
+cat<<EOF>>/etc/msmtprc
+defaults
+tls on
+tls_starttls on
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+account default
+host smtp.gmail.com
+port 587
+auth on
+user $email
+from $email
+password $pwdd
+logfile ~/.msmtp.log
+EOF
+}
+function testemail() {
+email=$(cat /home/email)
+if [[ "$email" = "" ]]; then
+start
+fi
+email=$(cat /home/email)
+echo -e "
+Ini adalah isi email percobaaan kirim email dari vps
+IP VPS : $IP
+Tanggal : $date
+" | mail -s "Percobaan Pengiriman Email" $email
+}
 clear
 echo -e "=============================="
 echo -e "     Autobackup Data $sts     "
 echo -e "=============================="
 echo -e "1. Start Autobackup"
 echo -e "2. Stop Autobackup"
-echo -e "3. Ganti Email"
+echo -e "3. Ganti Email Penerima"
+echo -e "4. Ganti Email Pengirim"
+echo -e "5. Test kirim Email"
 echo -e "=============================="
 read -rp "Please Enter The Correct Number : " -e num
 case $num in
@@ -80,7 +116,13 @@ start
 stop
 ;;
 3)
-ganti
+gantipenerima
+;;
+4)
+gantipengirim
+;;
+5)
+testemail
 ;;
 *)
 clear
