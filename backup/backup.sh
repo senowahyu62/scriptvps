@@ -12,31 +12,15 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
 # Getting
-MYIP=$(wget -qO- ipinfo.io/ip);
-echo "Checking VPS"
-IZIN=$( curl https://raw.githubusercontent.com/senowahyu62/perizinan/main/ipvps.txt | grep $MYIP )
-if [ $MYIP = $MYIP ]; then
-echo -e "${NC}${GREEN}Permission Accepted...${NC}"
-else
-echo -e "${NC}${RED}Permission Denied!${NC}";
-echo -e "${NC}${LIGHT}Please Contact Admin!!"
-echo -e "${NC}${LIGHT}Facebook : https://m.facebook.com/lis.tio.718"
-echo -e "${NC}${LIGHT}WhatsApp : 081545854516"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/Akbar218"
-exit 0
-fi
 clear
 IP=$(wget -qO- ipinfo.io/ip);
-date=$(date +"%Y-%m-%d")
+date=$(date +"%Y-%m-%d")clear
+echo "Masukkan Email Untuk Menerima Backup"
+read -rp " Email: " -e email
 clear
-echo "Starting Backup"
-sleep 1
-echo "Membuat Directory"
+echo "Mohon Menunggu , Proses Backup sedang berlangsung !!"
+rm -rf /root/backup
 mkdir /root/backup
-sleep 1
-echo "Start Backup"
-sleep 2
-clear
 cp /etc/passwd backup/
 cp /etc/group backup/
 cp /etc/shadow backup/
@@ -57,17 +41,23 @@ rclone copy /root/$IP-$date.zip dr:backup/
 url=$(rclone link dr:backup/$IP-$date.zip)
 id=(`echo $url | grep '^https' | cut -d'=' -f2`)
 link="https://drive.google.com/u/4/uc?id=${id}&export=download"
-echo -e "The following is a link to your vps data backup file."
-echo -e "=================================" 
-echo -e "Detail Backup : "
-echo -e "================================="
-echo -e "IP VPS        : $IP"
-echo -e "Link Backup   : $link"
-echo -e "================================="
-echo -e "Script By LamVpn"
-echo ""
-echo -e "If you want to restore data, please enter the link above"
-echo ""
+echo -e "
+Detail Backup 
+==================================
+IP VPS        : $IP
+Link Backup   : $link
+Tanggal       : $date
+==================================
+" | mail -s "Backup Data" $email
 rm -rf /root/backup
 rm -r /root/$IP-$date.zip
-echo "Done"
+clear
+echo -e "
+Detail Backup 
+==================================
+IP VPS        : $IP
+Link Backup   : $link
+Tanggal       : $date
+==================================
+"
+echo "Silahkan cek Kotak Masuk $email"
