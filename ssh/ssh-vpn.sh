@@ -1,6 +1,4 @@
 #!/bin/bash
-# By Akbar Maulana
-# My Telegram : https://t.me/Akbar218
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -440,7 +438,7 @@ wget -O portsshws "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/
 
 wget -O sshovpnmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/sshovpn.sh"
 wget -O l2tpmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/l2tpmenu.sh"
-wget -O pptpmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/pptpmenu.sh
+wget -O pptpmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/pptpmenu.sh"
 wget -O sstpmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/sstpmenu.sh"
 wget -O wgmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/wgmenu.sh"
 wget -O ssmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/ssmenu.sh"
