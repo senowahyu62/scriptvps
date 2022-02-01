@@ -1,0 +1,2 @@
+# scriptvps
+senovpn
