@@ -497,7 +497,7 @@ chmod +x swapkvm
 chmod +x addvmess
 chmod +x addvless
 chmod +x addtrojan
-chmod +x delv2ray
+chmod +x delvmess
 chmod +x delvless
 chmod +x deltrojan
 chmod +x cekvmess
