@@ -4,34 +4,131 @@ You can use the [editor on GitHub](https://github.com/senowahyu62/scriptvps/edit
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### Command Install
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+rm -f setup.sh && apt update && apt upgrade -y && update-grub && sleep 2 && apt-get update -y && apt-get upgrade && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl unzip && wget https://raw.githubusercontent.com/senowahyu62/scriptvps/main/setup.sh && chmod +x setup.sh && sed -i -e 's/\r$//' setup.sh && screen -S setup ./setup.sh
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+### Fitur Script
+• SSH & OpenVPN
 
-### Jekyll Themes
+• SSH Websocket TLS & No TLS
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/senowahyu62/scriptvps/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+• OHP SSH & OHP Dropbear & OHP OpenVPN
 
-### Support or Contact
+• XRAY VMESS 
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+• XRAY VLESS
+
+• XRAY TROJAN
+
+• SHADOWSOCKS
+
+• SSR
+
+• PPTP VPN
+
+• L2TP VPN
+
+• SSTP VPN
+
+• WIREGUARD
+
+• TROJAN GO
+
+• Backup Data ALL Service
+
+• Restore Data ALL Service
+
+### Os Supported
+
+• Debian 10 Only
+
+• Ubuntu 18.04 & 20.04 (Recommended)
+
+# Service & Port
+
+• OpenSSH                 : 443, 22
+
+• OpenVPN                 : TCP 1194, UDP 2200, SSL 990
+
+• Stunnel5                : 443, 445, 777
+
+• Dropbear                : 443, 109, 143
+
+• Squid Proxy             : 3128, 8080
+
+• Badvpn                  : 7100, 7200, 7300
+
+• Nginx                   : 89
+
+• Wireguard               : 7070
+
+• L2TP/IPSEC VPN          : 1701
+
+• PPTP VPN                : 1732
+
+• SSTP VPN                : 444
+
+• Shadowsocks-R           : 1443-1543
+
+• SS-OBFS TLS             : 2443-2543
+
+• SS-OBFS HTTP            : 3443-3543
+
+• XRAYS Vmess TLS         : 8443
+
+• XRAYS Vmess None TLS    : 80
+
+• XRAYS Vless TLS         : 8443
+
+• XRAYS Vless None TLS    : 80
+
+• XRAYS Trojan            : 2083
+
+• Websocket TLS           : 443
+
+• Websocket None TLS      : 8880
+
+• Websocket Ovpn          : 2086
+
+• OHP SSH                 : 8181
+
+• OHP Dropbear            : 8282
+
+• OHP OpenVPN             : 8383
+
+• Trojan Go               : 2087
+
+ ### Server Information & Other Features
+
+• Timezone                : Asia/Jakarta (GMT +7)
+
+• Fail2Ban                : [ON]
+
+• Dflate                  : [ON]
+
+• IPtables                : [ON]
+
+• Auto-Reboot             : [ON]
+
+• IPv6                    : [OFF]
+
+• Autoreboot On 05.00 GMT +7
+
+• Futo Delete Expired Account
+
+• Full Orders For Various Services
+
+• White Label
+
+
+
+
+
+
+------------
+**Telegram**
+------------
+[Senovpn](https://t.me/senovpn)
