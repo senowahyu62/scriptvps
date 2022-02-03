@@ -86,7 +86,7 @@ cat > /etc/xray/config.json << END
         "clients": [
           {
             "id": "${uuid1}",
-            "alterId": 32
+            "alterId": 0
 #xray-vmess-tls
           }
         ]
@@ -122,7 +122,7 @@ cat > /etc/xray/config.json << END
 
           {
             "id": "${uuid2}",
-            "alterId": 32
+            "alterId": 0
 #xray-vmess-nontls
           }
         ]
