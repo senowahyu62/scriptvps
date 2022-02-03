@@ -59,7 +59,7 @@ cat>/etc/xray/vmess-$user-tls.json<<EOF
       "add": "${domain}",
       "port": "${tls}",
       "id": "${uuid}",
-      "aid": "32",
+      "aid": "0",
       "net": "ws",
       "path": "/vmess/",
       "type": "none",
@@ -74,7 +74,7 @@ cat>/etc/xray/vmess-$user-nontls.json<<EOF
       "add": "${domain}",
       "port": "${nontls}",
       "id": "${uuid}",
-      "aid": "32",
+      "aid": "0",
       "net": "ws",
       "path": "/vmess/",
       "type": "none",
@@ -97,7 +97,7 @@ echo -e "Address     : ${domain}"
 echo -e "Port TLS    : ${tls}"
 echo -e "Port No TLS : ${nontls}"
 echo -e "User ID     : ${uuid}"
-echo -e "Alter ID    : 32"
+echo -e "Alter ID    : 0"
 echo -e "Security    : auto"
 echo -e "Network     : ws"
 echo -e "Path        : /vmess/"
