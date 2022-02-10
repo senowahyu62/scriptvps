@@ -12,11 +12,9 @@ LIGHT='\033[0;37m'
 # ==========================================
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
-IZIN=$( curl https://raw.githubusercontent.com/senowahyu62/perizinan/main/ipvps.txt | grep $MYIP )
-
 clear
 read -rp "Domain/Host : " -e domain
-echo "IP=$domain" >>/var/lib/akbarstorevpn/ipvps.conf
+echo "IP=$domain" >>/var/lib/datavpn/ipvps.conf
 rm -rf /etc/xray/domain
-echo $domain > /etc/xray/domain
+echo $domain > /var/lib/datavpn/domain
 certv2ray
