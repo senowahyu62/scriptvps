@@ -12,7 +12,7 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
 # Getting
-read -p "Input Your Domain For This Server :" SUB_DOMAIN
+read -rp "Input Your Domain For This Server :" -e SUB_DOMAIN
 echo "Host : $SUB_DOMAIN"
 echo $SUB_DOMAIN > /root/domain
 # / / Make Main Directory
