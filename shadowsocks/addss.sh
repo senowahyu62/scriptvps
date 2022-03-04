@@ -35,7 +35,7 @@ else
 tls="$((lastport1+1))"
 fi
 if [[ $lastport2 == '' ]]; then
-http=3443
+http=2944
 else
 http="$((lastport2+1))"
 fi
