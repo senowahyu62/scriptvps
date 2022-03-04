@@ -54,7 +54,7 @@ until [[ ${CLIENT_NAME} =~ ^[a-zA-Z0-9_]+$ && ${CLIENT_EXISTS} == '0' ]]; do
 done
 
 echo "IPv4 Detected"
-ENDPOINT="$SERVER_PUB_IP:$SERVER_PORT"
+ENDPOINT="$domain:$SERVER_PORT"
 WG_CONFIG="/etc/wireguard/wg0.conf"
 LASTIP=$( grep "/32" $WG_CONFIG | tail -n1 | awk '{print $3}' | cut -d "/" -f 1 | cut -d "." -f 4 )
 if [[ "$LASTIP" = "" ]]; then
